@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!---    <link rel="stylesheet" href="musicpage.css">
+-->
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-stars-bg.png");
+    background-size: cover;
+    width: 100vw;
+    height: 150vh;
+    padding: 20px;
+}
+
+.dbg {
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+.sbg {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pbg {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nbg {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-bg.png");
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.n {
+    font-size: 35px;
+    margin: 30px;
+}
+
+.gh {
+    border-radius: 20px;
+    background-color: violet;
+}
+
+.nh {
+    margin-bottom: 150px;
+}
+
+.ui {
+    width: 100vw;
+    height: 50vh;
+}
+
+.bd {
+    background-color: pink;
+    padding: 10px;
+    text-align:center;
+}
+.ag{
+    text-align:center;
+}
+.he {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.gr {
+    color: grey;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.j {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.p {
+    height: 140px;
+    width: 140px;
+    margin: 3px;
+    text-align:center;
+}
+
+.jg {
+    color: white;
+    font-size: 10px;
+    margin: 10px;
+}    </style>
+
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="bg">
+            <div class="dbg nh d-flex flex-column justify-content-center">
+                <h1 class="sbg">Sleep Music</h1>
+                <p class="pbg">soothing beadtime music to help you fall into a deep and natural sleep</p>
+            </div>
+            <div class="nbg ">
+                <h1 class="n">Night Island</h1>
+                <p>Non-stop 8-hours mixes of our most popular sleep audio</p>
+                <div>
+                    <button class="gh" onclick="display('sectionmusic')">get started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionmusic">
+        <div>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/clouds-img.png" class="ui" />
+            <div class="bd ">
+                <div>
+                    <h1 class="he">Night Island</h1>
+                    <p class="gr">ease the mind into a restful night's sleep with these deep,amblent tones.</p>
+                    <p class="gr">45 MIN SLEEP MUSIC</p>
+                </div>
+                <div>
+                    <h1 class="j">Related</h1>
+                    <div class="d-flex flex-row">
+                        <div class="ag">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/moon-clouds-img.png" class=" p" />
+                            <h1 class="jg">Moon clouds</h1>
+                            <p class="jg">55 min sleep music</p>
+                        </div>
+                        <div class="ag">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sweet-sleep-img.png" class="p" />
+                            <h1 class="jg">Sweet sleep</h1>
+                            <p class="jg">60 min sleep music</p>
+                            <button onclick="display('sectionhome')">back</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
